@@ -1,22 +1,11 @@
-import React from "react";
-import Navbar from "../components/Navbar";
-import "../App.css";
-import { makeStyles } from "@material-ui/core/styles";
-import LoginForm from '../components/LoginInput'
+import Layout from "../components/Layout"
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-}));
-function Signup() {
-  const classes = useStyles();
+function Login() {
   return (
-    <div className="Signup" className={classes.root}>
-      <Navbar />
-			<LoginForm />
-    </div>
+    <Layout className="Home">
+
+    </Layout>
   );
 }
 
-export default Signup;
+export default Login;
